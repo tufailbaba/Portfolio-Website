@@ -1,5 +1,5 @@
-// Type declarations for gsap-trial modules that don't ship their own types
-declare module 'gsap-trial/SplitText' {
+// Type declarations for GSAP premium plugins (now free since April 2025)
+declare module 'gsap/SplitText' {
   export class SplitText {
     constructor(target: string | string[] | Element | Element[], vars?: Record<string, any>);
     chars: Element[];
@@ -10,7 +10,13 @@ declare module 'gsap-trial/SplitText' {
   }
 }
 
-declare module 'gsap-trial/*' {
-  const value: any;
-  export default value;
+declare module 'gsap/ScrollSmoother' {
+  export class ScrollSmoother {
+    static create(vars?: Record<string, any>): ScrollSmoother;
+    static refresh(safe?: boolean): void;
+    scrollTop(value?: number): number;
+    scrollTo(target: string | Element, smooth?: boolean, position?: string): void;
+    paused(value?: boolean): boolean;
+    kill(): void;
+  }
 }
