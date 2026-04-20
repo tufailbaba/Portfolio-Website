@@ -121,3 +121,68 @@ body {
     font-size: 40px;
   }
 }
+@media screen and (max-width: 480px) {
+  body {
+    --cWidth: calc(100% - 20px);
+  }
+  .techstack h2 {
+    font-size: 28px;
+    top: 80px;
+  }
+  .techstack {
+    margin-top: 20px;
+    margin-bottom: -50px;
+  }
+}
+
+/* Work section mobile override - vertical layout */
+@media only screen and (max-width: 1024px) {
+  .work-section {
+    height: auto !important;
+    min-height: auto;
+  }
+  .work-container {
+    height: auto;
+    align-content: normal;
+  }
+  .work-flex {
+    flex-direction: column;
+    height: auto !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    transform: none !important;
+  }
+  .work-box {
+    width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #363636;
+    padding: 30px 15px !important;
+    flex-shrink: initial;
+  }
+  .work-flex .work-box:nth-child(even) {
+    flex-direction: column;
+  }
+  .work-section h2 {
+    font-size: 36px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .work-flex::before,
+  .work-flex::after {
+    display: none;
+  }
+  .work-image img {
+    max-height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+/* Work description styling */
+.work-description {
+  font-size: 13px;
+  color: #999;
+  margin-top: 8px !important;
+  font-style: italic;
+}

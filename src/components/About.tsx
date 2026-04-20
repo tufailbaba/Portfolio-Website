@@ -6,9 +6,10 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          Motivated Information Technology student and aspiring Backend Developer
+          specializing in Ruby on Rails. Experienced in building database-driven
+          web applications using MVC architecture and RESTful APIs. Skilled in
+          integrating SQL databases and developing scalable backend systems.
         </p>
       </div>
     </div>
